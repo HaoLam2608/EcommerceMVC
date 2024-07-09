@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcommerceHao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a11f43f32538b4c8f54c70b96c87d1afc7817cde")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80e89ba7daaf2fab4585edbb7825592e982dac87")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcommerceHao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcommerceHao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
