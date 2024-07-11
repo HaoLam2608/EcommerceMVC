@@ -13,8 +13,8 @@ namespace EcommerceHao.Controllers
         {
             db = context;
         }
-        const string cartKey = "mycart";
-        public List<CartItem> Cart => HttpContext.Session.Get<List<CartItem>>(cartKey) ?? new List<CartItem>();
+       
+        public List<CartItem> Cart => HttpContext.Session.Get<List<CartItem>>(MyConst.cartKey) ?? new List<CartItem>();
         public IActionResult Index()
         {
             return View(Cart);
@@ -46,8 +46,19 @@ namespace EcommerceHao.Controllers
             {
                 item.soLuong+=quantity;
             }
-            HttpContext.Session.Set(cartKey, gioHang);
+            HttpContext.Session.Set(MyConst.cartKey, gioHang);
 
+            return RedirectToAction("Index");
+        }
+        public IActionResult RemoveCart(int id)
+        {
+            var gioHang = Cart;
+            var item = gioHang.SingleOrDefault(p => p.maHH == id);
+            if (item != null) 
+            {   
+                gioHang.Remove(item);
+                HttpContext.Session.Set(MyConst.cartKey, gioHang);
+            }
             return RedirectToAction("Index");
         }
     }
