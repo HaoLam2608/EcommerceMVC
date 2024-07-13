@@ -251,3 +251,5 @@ D:\Visual Studio 2022\Project\EcommerceHao\EcommerceHao\bin\Debug\net8.0\runtime
 D:\Visual Studio 2022\Project\EcommerceHao\EcommerceHao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Visual Studio 2022\Project\EcommerceHao\EcommerceHao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\Visual Studio 2022\Project\EcommerceHao\EcommerceHao\obj\Debug\net8.0\EcommerceHao.sourcelink.json
+D:\Visual Studio 2022\Project\EcommerceHao\EcommerceHao\bin\Debug\net8.0\AutoMapper.dll
+D:\Visual Studio 2022\Project\EcommerceHao\EcommerceHao\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
