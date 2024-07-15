@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0oF4awiEV94aY6szHWswD+xS/x+h8lnQqSG3+E+F8TI=",
+  "Hash": "I/v5e2PykAi7oi+yxvm8vJ6N6C/yOdql1rTxpjtctUk=",
   "Source": "EcommerceHao",
   "BasePath": "_content/EcommerceHao",
   "Mode": "Default",
@@ -5221,6 +5221,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\Penguins.jpg"
+    },
+    {
+      "Identity": "D:\\Visual Studio 2022\\Project\\EcommerceHao\\EcommerceHao\\wwwroot\\Hinh\\KhachHang\\tree.jpg",
+      "SourceId": "EcommerceHao",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Visual Studio 2022\\Project\\EcommerceHao\\EcommerceHao\\wwwroot\\",
+      "BasePath": "_content/EcommerceHao",
+      "RelativePath": "Hinh/KhachHang/tree.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\tree.jpg"
     },
     {
       "Identity": "D:\\Visual Studio 2022\\Project\\EcommerceHao\\EcommerceHao\\wwwroot\\Hinh\\KhachHang\\woman.jpg",

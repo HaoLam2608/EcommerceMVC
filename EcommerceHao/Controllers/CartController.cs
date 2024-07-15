@@ -2,6 +2,7 @@
 using EcommerceHao.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using EcommerceHao.Helpers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EcommerceHao.Controllers
 {
@@ -60,6 +61,79 @@ namespace EcommerceHao.Controllers
                 HttpContext.Session.Set(MyConst.cartKey, gioHang);
             }
             return RedirectToAction("Index");
+        }
+
+
+        [Authorize]
+        [HttpGet]
+        public IActionResult Checkout()
+        {
+
+            if (Cart.Count == 0)
+            {
+                return Redirect("/");
+            }
+            return View(Cart);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public IActionResult Checkout(CheckoutVM model)
+        {   
+
+            if (ModelState.IsValid)
+            {
+                var customerID = HttpContext.User.Claims.SingleOrDefault(p => p.Type == MyConst.Claims_CusID).Value;
+                var khachhang = new KhachHang();
+                if (model.GiongKhachHang)
+                {
+                    khachhang = db.KhachHangs.SingleOrDefault(p => p.MaKh == customerID);
+                }
+                var hoadon = new HoaDon
+                {
+                    MaKh = customerID,
+                    HoTen=model.HoTen ?? khachhang.HoTen,
+                    DiaChi = model.DiaChi ?? khachhang.DiaChi,
+                    DienThoai=model.DienThoai ?? khachhang.DienThoai,
+                    NgayDat=DateTime.Now,
+                    CachThanhToan="COD",
+                    CachVanChuyen="GRAB",
+                    MaTrangThai=0,
+                    GhiChu=model.GhiChu
+                    
+                };
+                db.Database.BeginTransaction();
+                try
+                {                   
+                    db.Database.CommitTransaction();
+                    db.Add(hoadon);
+                    db.SaveChanges();
+
+                    var cthd=new List<ChiTietHd>();
+                    foreach(var item in Cart)
+                    {
+                        cthd.Add(new ChiTietHd 
+                        { 
+                            MaHd=hoadon.MaHd,
+                            SoLuong=item.soLuong,
+                            DonGia=item.donGia,
+                            MaHh=item.maHH,
+                            GiamGia=0,
+                        });
+
+                    }
+                    db.SaveChanges();
+                    HttpContext.Session.Set<List<CartItem>>(MyConst.cartKey,new List<CartItem>());
+
+                    return View("Success");
+                }
+                catch
+                {
+                    db.Database.RollbackTransaction();
+                }
+
+            }
+            return View(Cart);
         }
     }
 }

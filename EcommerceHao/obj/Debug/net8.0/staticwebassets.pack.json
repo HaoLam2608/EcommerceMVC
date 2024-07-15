@@ -349,6 +349,10 @@
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\man.jpg"
     },
     {
+      "Id": "D:\\Visual Studio 2022\\Project\\EcommerceHao\\EcommerceHao\\wwwroot\\Hinh\\KhachHang\\tree.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\tree.jpg"
+    },
+    {
       "Id": "D:\\Visual Studio 2022\\Project\\EcommerceHao\\EcommerceHao\\wwwroot\\Hinh\\KhachHang\\woman.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\woman.jpg"
     },
