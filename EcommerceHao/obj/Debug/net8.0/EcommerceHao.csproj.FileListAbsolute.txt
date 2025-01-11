@@ -253,3 +253,4 @@ D:\Visual Studio 2022\Project\EcommerceHao\EcommerceHao\bin\Debug\net8.0\runtime
 D:\Visual Studio 2022\Project\EcommerceHao\EcommerceHao\obj\Debug\net8.0\EcommerceHao.sourcelink.json
 D:\Visual Studio 2022\Project\EcommerceHao\EcommerceHao\bin\Debug\net8.0\AutoMapper.dll
 D:\Visual Studio 2022\Project\EcommerceHao\EcommerceHao\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Visual Studio 2022\Project\EcommerceHao\EcommerceHao\bin\Debug\net8.0\PayPal.dll

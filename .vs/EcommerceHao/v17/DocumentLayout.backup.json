@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Visual Studio 2022\\Project\\EcommerceHao\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA6B67AC-CA47-4E5F-B007-0DBD8A8F5F01}|EcommerceHao\\EcommerceHao.csproj|d:\\visual studio 2022\\project\\ecommercehao\\ecommercehao\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BA6B67AC-CA47-4E5F-B007-0DBD8A8F5F01}|EcommerceHao\\EcommerceHao.csproj|solutionrelative:ecommercehao\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Visual Studio 2022\\Project\\EcommerceHao\\EcommerceHao\\Dockerfile",
+              "RelativeDocumentMoniker": "EcommerceHao\\Dockerfile",
+              "ToolTip": "D:\\Visual Studio 2022\\Project\\EcommerceHao\\EcommerceHao\\Dockerfile",
+              "RelativeToolTip": "EcommerceHao\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-20T16:40:32.93Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

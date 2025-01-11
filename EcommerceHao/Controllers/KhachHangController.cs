@@ -79,6 +79,9 @@ namespace EcommerceHao.Controllers
                     }
                     else
                     {
+                        var test = model.Password.ToMd5Hash(khachHang.RandomKey);
+                        Console.WriteLine(test);
+                        Console.WriteLine(khachHang.MatKhau);
                         if (khachHang.MatKhau != model.Password.ToMd5Hash(khachHang.RandomKey))
                         {
                             ModelState.AddModelError("loi", "Sai thông tin đăng nhập");

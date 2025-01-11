@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("bb261216-1c0e-4744-b360-28baa661c75b")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcommerceHao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b72ac7f9fb299df375801d5bef14c0d3242f9840")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97dc318f5b2e616a62aa37357a3b841d074a2f81")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcommerceHao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcommerceHao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
