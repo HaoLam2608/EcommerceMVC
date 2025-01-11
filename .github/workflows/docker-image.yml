@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build the Docker image
-        run: cd EcommerceHao && docker build . --file Dockerfile --tag haolam:${{ github.sha }}
+        run: cd EcommerceHao && docker build . --file Dockerfile --tag haolam2608/haolam:${{ github.sha }}
       - name: Push Docker image
         run: |
           docker push haolam2608/haolam:${{ github.sha }}
